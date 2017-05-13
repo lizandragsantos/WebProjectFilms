@@ -28,8 +28,8 @@ div.img {
     margin-top:10px;
 	margin-bottom: 10px;
     float: left;
-    width: 192px;
-	height: 279px;
+    //width: 192px;
+	//height: 279px;
 	position: relative;
     overflow: auto;
 }
