@@ -14,10 +14,35 @@
 		
 
 		<script>
-		  function abreLink(){
+		$(document).ready(function(){
+			function abreLink(){
 				window.location.assign('file:///C:/Users/LIZANDRA/Google%20Drive/UCAM/8%C2%BAPeriodo_2/Hiperm%C3%ADdia%20e%20Multim%C3%ADdia/P1/Trabalho/cad_usuario.html')
-		  }
+		  	}
 		  
+		  	$("img").click(function obterDados(){
+		  		var id, tutulo, desc, image;
+
+		  		id = ($(this).attr("id"));
+		  		titulo = $("#"+id).attr("title");
+	   			image = $("#"+id).attr("src");
+	   			desc = $("#"+id).attr("alt");
+	   			$("#modal-title").html(titulo);
+      			$("#modal-desc").html(desc);
+       			$("#modal-img").attr("src", image);
+		 	});
+		
+			/*
+	   		$("#pegarimagem").click(function obtDados(){	
+	   			var desc, image;
+	   			
+	   			image = $("#pegarimagem").attr("src");
+	   			desc = $("#pegarimagem").attr("alt");	
+      			$("#image-gallery-caption").html(desc);
+       			$("#image-gallery-image").attr("src", image);
+
+    		});*/
+
+		});
 		  </script>
 		
 	</head>
@@ -50,13 +75,13 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<button type="button" class="btn navbar-btn" data-toggle="modal" data-target="#myModal">
+						<button type="button" class="btn navbar-btn" data-toggle="modal" data-target="#accountModal">
 						<span class="glyphicon glyphicon-user"></span> Entrar</button>										
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal fade" id="accountModal" role="dialog">
 			<div class="modal-dialog modal-sm">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -88,7 +113,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid">	
+		<div id="container" class="container-fluid">	
 			<div id="header" class="carousel slide" data-ride="carousel"">
 				<ol class="carousel-indicators">
 					<li data-target="#header" data-slide-to="0" class="active"></li>
@@ -122,42 +147,41 @@
 				</a>
 						
 			</div>
-			<div id="nav">
+			<div id="content">
 				<div id="category-recomendados" class="carousel slide" data-interval="0">
-					<a class="title-carousel" href="#recomendado" style="text-align:left"><h4>Recomendados</h4></a>
+					<h4 class="text-category">Recomendados</h4>
 					<ul>
 						<div class="carousel-inner">
 							<div class="item active">
 								<li>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a href="#">
-										<img class="img-responsive" src="0000026_200.jpg" alt="teste"></a>
-											<!--<div class="text"><p>This is a cat without legs because it is</p></div>-->									
+										<div class="img"><a href="#"><img class="img-responsive" id="01" src="0000026_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000034_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" id="02" src="0000034_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000057_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" id="03" src="0000057_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000056_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" id="04" src="0000056_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" id="05" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" id="06" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>												
 								</li>
@@ -166,33 +190,33 @@
 								<li>
 								<li>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000026_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>									
+										<div class="img"><a href="#"><img class="img-responsive" id="07" src="0000026_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+																				
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000034_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" id="08" src="0000034_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000057_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" id="09" src="0000057_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000056_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" id="10" src="0000056_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" id="11" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" id="12" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>												
 								</li>
@@ -210,39 +234,39 @@
 					</ul>
 				</div>
 				<div id="category-acao" class="carousel slide" data-interval="0">
-					<a class="title-carousel" href="#acao" style="text-align:left"><h4>Ação</h4></a>
+					<h4 class="text-category">Ação</h4>
 					<ul>
 						<div class="carousel-inner">
 							<div class="item active">
 								<li>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000026_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>									
+										<div class="img"><a href="#"><img class="img-responsive" src="0000026_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+																				
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000034_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000034_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000057_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000057_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000056_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000056_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>												
 								</li>
@@ -250,26 +274,26 @@
 							<div class="item">
 								<li>
 									<div class="category-item">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000026_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000026_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000034_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000034_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000057_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000057_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000056_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000056_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000097_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000097_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000097_200.jpg"></a>
-										<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000097_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+										
 										</div>
 									</div>
 								</li>
@@ -286,39 +310,39 @@
 					</ul>	
 				</div>	
 				<div id="category-drama" class="carousel slide" data-interval="0">
-					<a class="title-carousel" href="#drama" style="text-align:left"><h4>Drama</h4></a>
+					<h4 class="text-category">Drama</h4>
 					<ul>
 						<div class="carousel-inner">
 							<div class="item active">
 								<li>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000026_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>									
+										<div class="img"><a href="#"><img class="img-responsive" src="0000026_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+																				
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000034_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000034_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000057_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000057_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000056_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000056_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>												
 								</li>
@@ -326,33 +350,33 @@
 							<div class="item">
 								<li>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000026_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>									
+										<div class="img"><a href="#"><img class="img-responsive" src="0000026_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+																				
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000034_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000034_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000057_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000057_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000056_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000056_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>												
 								</li>
@@ -369,39 +393,39 @@
 					</ul>	
 				</div>	
 				<div id="category-romance" class="carousel slide" data-interval="0">
-					<a class="title-carousel" href="#romance" style="text-align:left"><h4>Romance</h4></a>
+					<h4 class="text-category">Romance</h4>
 					<ul>
 						<div class="carousel-inner">
 							<div class="item active">
 								<li>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000026_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>									
+										<div class="img"><a href="#"><img class="img-responsive" src="0000026_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+																				
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000034_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000034_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000057_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000057_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000056_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000056_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>												
 								</li>
@@ -409,33 +433,33 @@
 							<div class="item">
 								<li>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000026_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>									
+										<div class="img"><a href="#"><img class="img-responsive" src="0000026_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+																				
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000034_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000034_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000057_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000057_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000056_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000056_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img img-responsive"><a target="_blank" href="#"><img src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img img-responsive"><a href="#"><img src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>												
 								</li>
@@ -452,39 +476,39 @@
 					</ul>	
 				</div>	
 				<div id="category-suspense" class="carousel slide" data-interval="0">
-					<a class="title-carousel" href="#suspense" style="text-align:left"><h4>Suspense</h4></a>
+					<h4 class="text-category">Suspense</h4>
 					<ul>
 						<div class="carousel-inner">
 							<div class="item active">
 								<li>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000026_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>									
+										<div class="img"><a href="#"><img class="img-responsive" src="0000026_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+																				
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000034_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000034_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000057_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000057_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000056_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000056_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>												
 								</li>
@@ -492,33 +516,33 @@
 							<div class="item">
 								<li>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000026_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>									
+										<div class="img"><a href="#"><img class="img-responsive" src="0000026_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+																				
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000034_200.jpg"></a>
-											<div class="text"><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000034_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000057_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000057_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000056_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000056_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>
 									<div class="col-lg-2 col-xs-2 col-md-2 col-sm-2">
-										<div class="img"><a target="_blank" href="#"><img class="img-responsive" src="0000080_200.jpg"></a>
-											<div class="text" ><p>This is a cat without legs because it is</p></div>
+										<div class="img"><a href="#"><img class="img-responsive" src="0000080_200.jpg" onclick="obterDados" data-toggle="modal" data-target="#modalDesc" title="Titulo do filme" alt="Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto"></a>
+											
 										</div>
 									</div>												
 								</li>
@@ -536,27 +560,29 @@
 				</div>
 		</div>
 	</div>
-	<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal fade" id="modalDesc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-					<h4 class="modal-title" id="image-gallery-title"></h4>
+					<h4 class="modal-title" id="modal-title"></h4>
 				</div>
 				<div class="modal-body">
-					<img id="image-gallery-image" class="img-responsive" src="">
+				 <div class="row">
+					<img id="modal-img" class="img-responsive col-8 col-sm-6" src="">
+					<div id="modal-desc" class="col-4 col-sm-6" style="overflow: auto;"></div>
+				</div>
 				</div>
 				<div class="modal-footer">
 
-					<div class="col-md-8 text-justify" id="image-gallery-caption">
-						This text will be overwritten by jQuery
+					<div id="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="footer">Todos os direitos reservados</div>
+	<div id="footer">&copy; Todos os direitos reservados</div>
 	</body>
 	<script type="text/javascript" src="validacao_form.js"></script>
-	<script type="text/javascript" src="costum_modal.js"></script>
 </html>

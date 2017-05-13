@@ -3,54 +3,35 @@ body{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	width:100%;
 }
-.container{
-	
-	margin: auto;
-	margin-top:50px;
+#container{
+
 }
+
 #header{
-	
+
 }
-#categry{
-	margin-top: 10px;
-}
+
 #content{
 
 }
-#nav{
-	
-}
+
 #footer{
-	background-color:#CDC9C9;
-	color:#000000;
-	display: block;
-	padding: 10px;
-	height: 40px;
+ padding: 4rem 0;
+  border-top: 1px solid #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  color: #999999;
+  text-align: center;
 }
 div.img {
 
     margin-top:10px;
 	margin-bottom: 10px;
     float: left;
-    //width: 192px;
-	//height: 279px;
-	position: relative;
-    overflow: hidden;
-}
-
-.text {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     width: 192px;
-	margin: auto;
-    height: 0;
-    text-align: center;    
-    background: rgba(255, 255, 255, 0.7);
- 	font-weight: bold;
-	transition: height 0.7s ease-out; 
-	width:80%; 
-	margin-right: 10%;
+	height: 279px;
+	position: relative;
+    overflow: auto;
 }
 
 div.img:hover {
@@ -84,13 +65,8 @@ li a {
     padding: 16px;
 	}
 
-a.title-carousel{
-	color:black;
-	background-color: white;
-	
-}
-a.title-carousel:hover, a.title-carousel:active {
-    color:black;		
+.text-category{
+	text-align:left;
 }
 .msg-erro{
 	color: red; 
