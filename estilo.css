@@ -25,27 +25,24 @@ body{
 }
 div.img {
 
-    margin-top:10px;
+  margin-top:10px;
 	margin-bottom: 10px;
-    float: left;
-    //width: 192px;
+  float: left;
+  //width: 192px;
 	//height: 279px;
 	position: relative;
-    overflow: auto;
+  overflow: auto;
 }
 
 div.img:hover {
 	-webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 	opacity: 0.7;
 
 }
-div.img:hover .text{
-	height: 150px;
- }
 
 div.img img {
     width: 100%;
