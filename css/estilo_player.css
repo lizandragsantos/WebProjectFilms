@@ -1,0 +1,27 @@
+body{
+	color:black;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width:100%;
+}
+
+#player-video{
+	max-width: 100%;
+    height: auto;
+}
+
+#container{
+	padding-top: 60px;
+    margin: auto;
+    height: 625px;
+    text-align: center;
+}
+
+#footer{
+	padding: 1.5rem 0;
+	border-top: 1px solid #999999;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.125rem;
+	color: #999999;
+	text-align: center;
+	height: 25px
+}

@@ -1,0 +1,815 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"phpi",
+				"phpinfo"
+			],
+			[
+				"php",
+				"phpcredits"
+			],
+			[
+				"ti",
+				"title\tTag"
+			],
+			[
+				"se",
+				"senhaerr"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"s",
+				"senha"
+			],
+			[
+				"ci",
+				"cidadeerr"
+			],
+			[
+				"b",
+				"bairroerr"
+			],
+			[
+				"nu",
+				"numeroerr"
+			],
+			[
+				"e",
+				"enderecoerr"
+			],
+			[
+				"te",
+				"telefoneerr"
+			],
+			[
+				"sobr",
+				"sobrenomeerr"
+			],
+			[
+				"r",
+				"rsenhaerr"
+			],
+			[
+				"senh",
+				"senhaerr"
+			],
+			[
+				"ce",
+				"cep"
+			],
+			[
+				"no",
+				"nome"
+			],
+			[
+				"n",
+				"name"
+			],
+			[
+				"rs",
+				"rsenha"
+			],
+			[
+				"echo",
+				"echo\techo \"…\""
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"sessi",
+				"session_start"
+			],
+			[
+				"sess",
+				"session_register"
+			],
+			[
+				"pa",
+				"paginaLancamentos"
+			],
+			[
+				"tex-a",
+				"text-align"
+			],
+			[
+				"h",
+				"h3\tTag"
+			],
+			[
+				"ass",
+				"assistirFilme"
+			],
+			[
+				"casa",
+				"casamento"
+			],
+			[
+				"bt",
+				"btn-ass"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"co",
+				"connect"
+			],
+			[
+				"ech",
+				"each"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"emai",
+				"email"
+			],
+			[
+				"con",
+				"conexao"
+			],
+			[
+				"loca",
+				"location"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"ses",
+				"session_start"
+			],
+			[
+				"filter",
+				"filter_var"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"cpf",
+				"cpferr"
+			],
+			[
+				"uf",
+				"uferr"
+			],
+			[
+				"cidade",
+				"cidadeerr"
+			],
+			[
+				"bai",
+				"bairro"
+			],
+			[
+				"com",
+				"complemento"
+			],
+			[
+				"num",
+				"numero"
+			],
+			[
+				"en",
+				"endereco"
+			],
+			[
+				"cep",
+				"ceperr"
+			],
+			[
+				"tele",
+				"telefone"
+			],
+			[
+				"cp",
+				"cpferr"
+			],
+			[
+				"dt",
+				"dtnascimento"
+			],
+			[
+				"so",
+				"sobrenome"
+			],
+			[
+				"nome",
+				"nomeerr"
+			],
+			[
+				"rse",
+				"rsenha"
+			],
+			[
+				"sen",
+				"senha"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"nul",
+				"is_null"
+			],
+			[
+				"glo",
+				"globals\t$GLOBALS['…']"
+			],
+			[
+				"cad",
+				"cadTelefone"
+			],
+			[
+				"clo",
+				"closeconnection"
+			],
+			[
+				"gl",
+				"global"
+			],
+			[
+				"sql_ce",
+				"sql_cad_celular"
+			],
+			[
+				"sq",
+				"sql_cad_telefone"
+			],
+			[
+				"for",
+				"format_date"
+			],
+			[
+				"da",
+				"dtnascimento"
+			],
+			[
+				"cod",
+				"cod_pessoa"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"sel",
+				"sql_select_endereco"
+			],
+			[
+				"ser",
+				"servername"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"local",
+				"localhost"
+			],
+			[
+				"fa",
+				"falhou"
+			],
+			[
+				"sql_",
+				"sql_cad_endereco"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"mysql_err",
+				"mysql_error"
+			],
+			[
+				"is_n",
+				"is_null"
+			],
+			[
+				"cod_",
+				"cod_pessoa"
+			],
+			[
+				"my",
+				"mysql_query"
+			],
+			[
+				"mys",
+				"mysql_query"
+			],
+			[
+				"c",
+				"cpf"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"ou",
+				"outro"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"mysql_se",
+				"mysql_select_db"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"ro",
+				"row"
+			],
+			[
+				"modal-",
+				"modal-footer"
+			],
+			[
+				"modal",
+				"modalDesc"
+			],
+			[
+				"ove",
+				"overflow-x"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"mo",
+				"modal-desc"
+			],
+			[
+				"modal-d",
+				"modal-desc"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"im",
+				"img-responsive"
+			],
+			[
+				"po",
+				"popover"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"ob",
+				"obterDados"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"pe",
+				"pegarId"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"p",
+				"pegarId"
+			],
+			[
+				"image",
+				"image-gallery"
+			],
+			[
+				"ima",
+				"image"
+			],
+			[
+				"ht",
+				"html\thtml"
+			],
+			[
+				"scr",
+				"src"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "{\n\t\"folders\":\n\t[\n\t\t{\n\t\t\t\"path\": \".\"\n\t\t}\n\t]\n\t\"settings\": {\n        \"xdebug\": {\n             \"url\": \"http://netfilms.debug/\",\n        }\n    }\n}\n",
+			"file": "debugproject.sublime-project",
+			"file_size": 45,
+			"file_write_time": 131416952277342438,
+			"settings":
+			{
+				"buffer_size": 142,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "php/index.php",
+			"settings":
+			{
+				"buffer_size": 4431,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "i",
+		"selected_items":
+		[
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/WebProjectFilms",
+		"/C/wamp/www/WebProjectFilms/php"
+	],
+	"file_history":
+	[
+		"/C/wamp/www/WebProjectFilms/php/index.php",
+		"/C/wamp/www/WebProjectFilms/php/netfilms.php",
+		"/C/wamp/www/WebProjectFilms/html/filmes/casamento-grego.html",
+		"/C/wamp/www/WebProjectFilms/html/categorias/lancamentos.html",
+		"/C/wamp/www/WebProjectFilms/javascript/functions.js",
+		"/C/wamp/www/WebProjectFilms/php/registro.php",
+		"/C/wamp/www/teste.php",
+		"/C/wamp/www/WebProjectFilms/php/cad_usuario1.php",
+		"/C/wamp/www/WebProjectFilms/php/ope.php",
+		"/C/wamp/www/WebProjectFilms/php/conexao.php",
+		"/C/wamp/www/WebProjectFilms/html/casamento-grego.html",
+		"/C/wamp/www/WebProjectFilms/html/navigation.html",
+		"/C/wamp/www/WebProjectFilms/php/cad_usuario.php",
+		"/C/wamp/www/WebProjectFilms/css/estilo.css",
+		"/C/wamp/www/WebProjectFilms/css/estilo_categoria.css",
+		"/C/wamp/www/WebProjectFilms/html/cad_usuario.html",
+		"/C/wamp/www/WebProjectFilms/html/modal-descrition.html",
+		"/C/wamp/www/WebProjectFilms/css/estilo_player.css",
+		"/C/wamp/www/WebProjectFilms/javascript/jquery.mask.min.js",
+		"/C/wamp/www/WebProjectFilms/css/estilo_player",
+		"/C/wamp/www/WebProjectFilms/html/index.html",
+		"/C/wamp/www/WebProjectFilms/javascript/validacao_form.js",
+		"/C/wamp/www/WebProjectFilms/javascript/validacao_form_cad_usuario.js",
+		"/C/wamp/www/WebProjectFilms/css/estilo_cad.css",
+		"/C/wamp/www/WebProjectFilms/php/teste.php",
+		"/C/wamp/www/WebProjectFilms/css/estilo_login2.css",
+		"/C/wamp/www/WebProjectFilms/css/estilo_login.css",
+		"/C/wamp/www/WebProjectFilms/teste.html",
+		"/C/wamp/www/WebProjectFilms/php/teste2.php",
+		"/C/wamp/www/WebProjectFilms/php/navigation.php",
+		"/C/wamp/www/WebProjectFilms/php/debug.log",
+		"/C/wamp64/www/WebProjectFilms/html/cad_usuario.html",
+		"/C/wamp64/www/WebProjectFilms/php/cad_usuario.php",
+		"/C/wamp64/www/WebProjectFilms/html/navigation.html",
+		"/C/wamp64/www/WebProjectFilms/html/index.html",
+		"/C/wamp64/www/WebProjectFilms/php/conexao.php",
+		"/C/wamp64/www/WebProjectFilms/css/estilo.css",
+		"/C/wamp64/www/WebProjectFilms/css/estilo_cad.css",
+		"/C/wamp64/www/WebProjectFilms/javascript/validacao_form.js",
+		"/C/wamp64/www/WebProjectFilms/php/fechar_conexao.php",
+		"/C/wamp64/www/WebProjectFilms/javascript/validacao_form_cad_usuario.js",
+		"/C/wamp64/www/WebProjectFilms/javascript/functions.js",
+		"/C/wamp64/www/WebProjectFilms/html/index.php",
+		"/C/wamp64/www/WebProjectFilms/php/navigation.php",
+		"/C/Users/LIZANDRA/Desktop/teste.php",
+		"/C/Users/LIZANDRA/Desktop/teste",
+		"/C/wamp64/www/WebProjectFilms/index.old.html",
+		"/C/Users/LIZANDRA/Desktop/netfilmsonline.com.br.html",
+		"/C/Users/LIZANDRA/Google Drive/UCAM/8ºPeriodo_2/Hipermídia e Multimídia/P1/Trabalho/cad_usuario5.html",
+		"/C/Users/LIZANDRA/Google Drive/UCAM/8ºPeriodo_2/Hipermídia e Multimídia/P1/Trabalho/estilo_cad.css",
+		"/C/wamp64/www/WebProjectFilms/index.html",
+		"/C/wamp64/www/WebProjectFilms/estilo.css",
+		"/C/wamp64/www/WebProjectFilms/validacao_form.js",
+		"/C/wamp64/www/WebProjectFilms/include/navigation.html",
+		"/C/wamp64/www/WebProjectFilms/navigation.html",
+		"/C/wamp64/www/WebProjectFilms/index.shtml",
+		"/C/wamp64/www/WebProjectFilms/estilo_carousel.css",
+		"/C/wamp64/www/WebProjectFilms/estilo_carousel",
+		"/C/wamp64/www/WebProjectFilms/galery.css",
+		"/C/wamp64/www/WebProjectFilms/cad_usuario.html",
+		"/C/wamp64/www/WebProjectFilms/estilo_cad.css",
+		"/C/wamp64/www/WebProjectFilms/costum_modal.js",
+		"/C/Users/LIZANDRA/Desktop/Ruby/teste.rb",
+		"/C/Users/LIZANDRA/Desktop/ProjectRuby/hello/config/routes.rb",
+		"/C/Users/LIZANDRA/Desktop/teste.rb"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sub",
+			"..",
+			"http://netfilms",
+			"    background-color: #000;\n    padding: 40px 0 5px;\n    text-align: center",
+			"6",
+			"sub",
+			"imagens\\",
+			"text",
+			"<!--<",
+			"\"text\"",
+			"\t\t       \n",
+			"55",
+			"<a href=\"#\"><img class=\"img-responsive\" id=\"13\" src=\"0000026_200.jpg\" onclick=\"obterDados\" data-toggle=\"modal\" data-target=\"#modalDesc\" title=\"Titulo do filme\" alt=\"Descrição do Texto Descrição do Texto Descrição do Texto Descrição do Texto\"></a>",
+			"class=\"img-responsive\"",
+			"target=\"_blank\"",
+			"<div class=\"text\" ><p>This is a cat without legs because it is</p></div>",
+			"<div class=\"text\"><p>This is a cat without legs because it is</p></div>",
+			"image-gallery-image",
+			"image-gallery-imag"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "debugproject.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								142
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "php/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								149,
+								149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "debugproject.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"21":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"22":
+				{
+					"group": 0,
+					"index": 1
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 146.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
